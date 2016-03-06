@@ -1,0 +1,221 @@
+/* ==========================================================================
+   Global Overrides
+  ========================================================================== */
+* {
+  box-sizing: border-box;
+}
+
+.clearfix:after {
+  display: table;
+  clear: both;
+  content: "";
+}
+
+
+
+/* ==========================================================================
+   Author's custom styles
+  ========================================================================== */
+
+/* 
+    SITE COLORS:
+
+    White - #ffffff
+    Light Grey - #D6E0DC
+    Dark Grey - #3A3A3B
+    Grey/Black(text color) -#070809
+    Yellow - #F9D735
+    Red - #E63F3D
+*/
+
+
+/* Global
+   ================================================================ */
+* {
+  text-decoration: none;
+}
+html{
+  max-width: 100%;
+}
+
+/* Layout
+   ================================================================ */
+
+.banner{
+  background-image: url(../images/coworking.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  background-size: cover;
+  padding:30px;
+  margin-bottom: 1em;
+  box-shadow: 0px 0px 7px RGBA(58, 58, 59, .8) inset;
+
+
+}
+
+.blurb{
+  float:right;
+  width: 40%;
+  background: RGBA(246, 246, 246, .6);
+  box-shadow:0px 0px 7px RGBA(58, 58, 59, .8);
+  padding: 30px;
+
+}
+
+.info{
+  display: inline-block;
+  float: left;
+  width: 33%;
+  padding-right: 20px; 
+  padding-top: 2em;
+  padding-bottom: 2em;
+  padding-left: 2em;
+  border-left: solid 1px #D6E0DC
+
+}
+
+
+
+
+
+/* Headings
+   ================================================================ */
+h1{
+  font-size: 30px;
+  float: left;
+  font-family: 'Merriweather', serif;
+  padding-left: 20px;
+  font-weight: 400;
+  margin: 0;
+}
+
+h2{
+  font-size: 25px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  margin: 0;
+}
+
+h3{
+  margin: 0;
+  font-family: 'Merriweather', serif;
+  font-size: 25px;
+}
+
+/* Text Styles
+   ================================================================ */
+a{
+  color: inherit;
+  font-style: inherit;
+}
+.tagline {
+  text-align: center;
+  font-family: 'merriweather';
+  font-size: 25px;
+  font-weight: 700;
+  font-style: italic;
+  background-color: #d6e0dc;
+  margin: 0em;
+  padding: 20px;
+
+}
+
+p{
+  font-size: 20px;
+  line-height: 1.5em;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+ 
+  
+
+}
+
+/* Header
+   ================================================================ */
+header{
+  background-color: #3A3A3B;
+  width: 100%;
+  display: inline-block;
+  border-bottom: 5px solid #f9d735;
+  color: #ffffff;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  box-shadow: 0px 0px 7px RGBA(58, 58, 59, .8);
+ 
+}
+
+
+.boldnavlink{
+  font-size: 20px;
+  font-family: 'Oswald', sans-serif;
+  vertical-align: baseline;
+}
+
+/* Footer
+   ================================================================ */
+footer{
+background-color: #3A3A3B;
+width: 100%;
+color: #ffffff;
+overflow: hidden;
+padding-left: 2em;
+margin-top: 1em;
+
+}
+
+/* Navigation
+   ================================================================ */
+nav {
+  float: left;
+  font-weight: 400;
+  font-size: 20px;
+  float: right;
+  font-family: 'Source Sans Pro', sans-serif;
+
+
+}
+
+ul {
+  display: inline;
+
+}
+
+li{
+  float: left;
+  padding: 0px 15px;
+
+
+}
+
+/* Buttons
+   ================================================================ */
+
+.redbutton{
+  color: #ffffff;
+  background-color: #E63F3D;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 40px;
+  border-radius: 3px;
+  box-shadow:  0 -3px 0 rgba(0,0,0,.2) inset; 
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  display: block;
+  
+
+}
+
+.button{
+  color: #000000;
+  background-color: #D6E0DC;
+  font-size: 20px;
+  text-align: center;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  border-radius: 3px;
+  box-shadow:  0 -3px 0 rgba(0,0,0,.2) inset; 
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  display: block;
+}
