@@ -2,11 +2,14 @@
 // Create a function you can run when you submit the field Hint: .submit() in jQuery
 // In your enter function, remember we can use .append() in jQuery to add things to HTML elements
 
+//Declare global variable
 var total = 0;
 	$('#entry').submit(enter);
+
 	function enter(event) {
+    //getting the value of the input with an id of #newEntry
 		var entry, money;
-			event.preventDefault();
+			
   				entry = $('#newEntry').val();
   				entry = parseFloat(entry);
   				dollars = dollarsFormat(entry);
