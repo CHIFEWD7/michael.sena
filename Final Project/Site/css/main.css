@@ -9,13 +9,32 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+* {
+  box-sizing: border-box;
+}
 
 html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    box-sizing: border-box;
+    font-size: 16px;
 }
 
+.clearfix:after {
+    display: block;
+    height: 0;
+    clear: both;
+    line-height: 0;
+    content: ".";
+
+    visibility: hidden;
+}
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -94,23 +113,243 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/* ===============HEADER============== */
+.site{
+    /*border: 1px solid #000;*/
+}
+header{
+    height: 65px;
+    border-bottom: solid 1px RGBA(179, 179, 179, 1);
+    margin-top: 5px;
+    
+}
+.headcontained{
+  max-width: 1200px;
+  /*border: 1px solid #000;*/
+  margin: auto;
+}
+.logo{
+background-image: url("../img/CO.84.svg");
+background-size: 55px 55px;
+background-repeat: no-repeat;
+background-position: left;
+float: left;
+height: 60px;
+/*border: 1px solid #000;*/
+width: 33.333%;
 
 
 
+}
+.fullnav{
+  float: left;
+  text-align: left;
+  /*border: 1px solid #000;*/
+  width: 33.333%;
+  height: 50px;
+  margin-top: 10px;
+  
+}
+.fullnav ul{
+    width: 100%;
+    margin: auto;
+
+}
+.fullnav ul li {
+  float: left;
+  display: inline;
+  text-align: left;
+  width:25%;
+  list-style: none;
+  padding:0;
+
+}
+
+.fullnav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #000;
+  text-align: left;
+  text-transform: uppercase;
+  margin-top: 15px;
+  font-weight: 500;
+  font-size: 12px;
+  font-family: 'Work Sans', sans-serif;
+}
+.socialnav{
+  float: right;
+  text-align: right;
+  /*border: 1px solid #000;*/
+  height: 50px;
+  margin-top: 10px;
+}
+.socialnav ul{
+    width: 100%;
+    margin: 0;
+
+}
+.socialnav ul li {
+  float: left;
+  display: inline;
+  text-align: center;
+  list-style: none;
+  padding-left:30px;
+  
+
+}
+
+.socialnav ul li a {
+  display: block;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: RGBA(179, 179, 179, );
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 15px;
+  font-weight: 400;
+  font-size: 13px;
+}
+.socialnav ul li a img {
+  height: 20px;
+  width: 20px;
+}
+nav a:hover {
+  color: #000;
+}
+/* ==============HEADER END============= */
+
+/* ==============HOME HERO============= */
+
+.banner {
+  width: 100%;
+  margin-top: 10px;
+ 
+
+}
+
+.hero-image{
+    max-width: 1200px;
+    height:500px;
+    /*border: solid 1px #000;*/
+    background-image: url("../img/home_hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position:relative;
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.overlaycopy{
+  float: center;
+  width: 520px;
+  margin: auto;
+  margin-top: 130px;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, .4);
+  border: 1px solid rgba(255, 255, 255, .4);
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, .4);
+    color: #000;
+    display: inline-block;
+ 
+}
+.overlaycopy h2{
+  font-weight: 900;
+  font-size: 30px;
+  font-family: 'Work Sans', sans-serif;
+  color: #000;
+  line-height: 2px;
+
+}
+.overlaycopy h3{
+  font-weight: 200;
+  font-size: 12px;
+  font-family: 'Work Sans', sans-serif;
+  color: #000;
+  line-height: 2px;
+  margin: 0;
+
+}
+.overlaycopy p{
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+
+}
+
+/* ==============HOME HERO END============ */
+
+/* ==============HOME 3 PRODUCTS CONTAINER ============= */
+
+.home-blurb{
+  max-width: 1200px;
+  margin-bottom: 15px;
+  border-bottom: solid 1px RGBA(179, 179, 179, 1);
+
+}
+.home-blurb h5{
+ font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align:center;
+  margin:0;
+
+}
+.home-blurb h6{
+ font-family: 'Work Sans', sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align:center;
+  margin: 0;
+
+}
+
+.features{
+background-color: #fff;
+height:200px;
+width:1200px;
+margin:auto;
+text-align:center;
+
+
+}
+
+.features .feature{
+  width: 33.333%;
+  float: left;
+  padding:5px;
+}
+
+.features .feature .feature-inner{
+ /* border: 1px solid #ccc;*/
+  padding: 10px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+
+}
+
+.features .feature .feature-inner img{
+  width: 100%
+}
 
 
 
+footer{
+    height: 45px;
+    border-top: solid 1px RGBA(179, 179, 179, 1);
+    display: inline-block;
+    width: 100%;
+    background-color: RGBA(39, 40, 34, 1);
+    text-align: center;
+    
+    color: white;
 
-
-
-
-
-
-
-
-
-
-
+  }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -139,6 +378,8 @@ textarea {
     padding: 0;
     position: absolute;
     width: 1px;
+    margin: 0;
+    display: bl
 }
 
 /*
