@@ -254,13 +254,26 @@ footer{
     background-image: url("../img/home_hero.jpg");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: -20px;
     position:relative;
     overflow: hidden;
     text-align: center;
     margin: auto;
     margin-bottom: 30px;
 }
-
+.contactimage{
+    max-width: 1200px;
+    height: 250px;
+    /*border: solid 1px #000;*/
+    background-image: url("../img/contact/vice.jpg");
+    background-position: 0px -345px;
+    background-repeat: no-repeat;
+   
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 30px;
+}
 .overlaycopy{
   float: center;
   width: 520px;
@@ -719,6 +732,7 @@ height: 30px;
   margin: auto;
   overflow: hidden;
   margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .Form-column{
@@ -741,11 +755,11 @@ height: 30px;
   top: 46px;
   left: 0;
   z-index: 1;
-  background: #FD8A71;
+  background: RGBA(180, 63, 52, 1);
   color: #ffffff;
   padding: 0;
   margin: 0;
-  border-radius: 10px;
+  border-radius: 3px;
   width: 100%;
 }
 
@@ -820,7 +834,6 @@ height: 30px;
     width: 100%;
     float: none;
   }
-
 
 
 
