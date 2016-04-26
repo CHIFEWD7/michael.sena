@@ -113,21 +113,24 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-/* ===============HEADER============== */
 .site{
     /*border: 1px solid #000;*/
-}
+  }
+
+/* ===============HEADER + FOOTER============== */
+
 header{
     height: 65px;
     border-bottom: solid 1px RGBA(179, 179, 179, 1);
-    margin-top: 5px;
-    
+    margin-top: 5px;    
 }
+
 .headcontained{
   max-width: 1200px;
   /*border: 1px solid #000;*/
   margin: auto;
 }
+
 .logo{
 background-image: url("../img/CO.84.svg");
 background-size: 55px 55px;
@@ -137,10 +140,10 @@ float: left;
 height: 60px;
 /*border: 1px solid #000;*/
 width: 33.333%;
-
-
-
+text-indent: -999px;
+overflow: hidden;
 }
+
 .fullnav{
   float: left;
   text-align: left;
@@ -148,13 +151,14 @@ width: 33.333%;
   width: 33.333%;
   height: 50px;
   margin-top: 10px;
-  
+  padding-left: 60px;
 }
+
 .fullnav ul{
     width: 100%;
     margin: auto;
-
 }
+
 .fullnav ul li {
   float: left;
   display: inline;
@@ -162,7 +166,6 @@ width: 33.333%;
   width:25%;
   list-style: none;
   padding:0;
-
 }
 
 .fullnav ul li a {
@@ -178,6 +181,7 @@ width: 33.333%;
   font-size: 12px;
   font-family: 'Work Sans', sans-serif;
 }
+
 .socialnav{
   float: right;
   text-align: right;
@@ -185,19 +189,18 @@ width: 33.333%;
   height: 50px;
   margin-top: 10px;
 }
+
 .socialnav ul{
     width: 100%;
     margin: 0;
-
 }
+
 .socialnav ul li {
   float: left;
   display: inline;
   text-align: center;
   list-style: none;
   padding-left:30px;
-  
-
 }
 
 .socialnav ul li a {
@@ -216,23 +219,37 @@ width: 33.333%;
   height: 20px;
   width: 20px;
 }
+
 nav a:hover {
   color: #000;
 }
-/* ==============HEADER END============= */
+
+footer{
+    height: 60px;
+    border-top: solid 1px RGBA(179, 179, 179, 1);
+    display: inline-block;
+    width: 100%;
+    background-color: RGBA(39, 40, 34, 1);
+    text-align: center;
+    color: white;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 200;
+    font-size: 12px;
+
+  }
+
+/* ===============END HEADER + FOOTER============== */
 
 /* ==============HOME HERO============= */
 
 .banner {
   width: 100%;
   margin-top: 10px;
- 
-
 }
 
 .hero-image{
     max-width: 1200px;
-    height:500px;
+    height: 500px;
     /*border: solid 1px #000;*/
     background-image: url("../img/home_hero.jpg");
     background-size: cover;
@@ -243,6 +260,7 @@ nav a:hover {
     margin: auto;
     margin-bottom: 30px;
 }
+
 .overlaycopy{
   float: center;
   width: 520px;
@@ -254,16 +272,16 @@ nav a:hover {
     box-shadow: 0 0 0 10px rgba(255, 255, 255, .4);
     color: #000;
     display: inline-block;
- 
 }
+
 .overlaycopy h2{
   font-weight: 900;
   font-size: 30px;
   font-family: 'Work Sans', sans-serif;
   color: #000;
   line-height: 2px;
-
 }
+
 .overlaycopy h3{
   font-weight: 200;
   font-size: 12px;
@@ -271,14 +289,15 @@ nav a:hover {
   color: #000;
   line-height: 2px;
   margin: 0;
-
 }
+
 .overlaycopy p{
   font-family: 'Work Sans', sans-serif;
   font-weight: 300;
   font-size: 16px;
-
 }
+
+
 
 /* ==============HOME HERO END============ */
 
@@ -288,8 +307,8 @@ nav a:hover {
   max-width: 1200px;
   margin-bottom: 15px;
   border-bottom: solid 1px RGBA(179, 179, 179, 1);
-
 }
+
 .home-blurb h5{
  font-family: 'Work Sans', sans-serif;
   font-weight: 600;
@@ -297,8 +316,8 @@ nav a:hover {
   text-transform: uppercase;
   text-align:center;
   margin:0;
-
 }
+
 .home-blurb h6{
  font-family: 'Work Sans', sans-serif;
   font-weight: 200;
@@ -306,17 +325,14 @@ nav a:hover {
   text-transform: uppercase;
   text-align:center;
   margin: 0;
-
 }
 
 .features{
 background-color: #fff;
 height:200px;
-width:1200px;
+max-width:1200px;
 margin:auto;
 text-align:center;
-
-
 }
 
 .features .feature{
@@ -330,26 +346,484 @@ text-align:center;
   padding: 10px;
   font-family: 'Work Sans', sans-serif;
   font-weight: 300;
-
 }
 
 .features .feature .feature-inner img{
   width: 100%
 }
 
+.feature-button{
+  width: 75%;
+  display: block;
+  padding: 12px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #222;
+  border-radius: 5px;
+  border:1px solid RGBA(39, 40, 34, 1);
+  background: #fff;
+  text-decoration: none;
+  margin: auto;  
+}
 
+.feature-button:hover {
+  display: inline-block;
+  transform: translatez(0);
+  box-shadow: 0 0 1px RGBA(0, 0, 0, 0);
+  backface-visibility: hidden;
+  position: relative;
+  background: RGBA(39, 40, 34, 1);
+  transition-property: color;
+  transition-duration: 0.3s;
+  color: white;
+}
 
-footer{
-    height: 45px;
-    border-top: solid 1px RGBA(179, 179, 179, 1);
-    display: inline-block;
-    width: 100%;
-    background-color: RGBA(39, 40, 34, 1);
+/* ==============END HOME 3 PRODUCTS CONTAINER ============= */
+
+/* ==============ABOUT HERO CONTAINER ============= */
+
+.about-hero{
+    max-width: 1200px;
+    height: 350px;
+    /*border: solid 1px #000;*/
+    background-image: url("../img/about_page/about_hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right 0px bottom 10px;
+    /*position:relative;*/
+    overflow: hidden;
     text-align: center;
-    
-    color: white;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 0;
+}
 
+.about_overlaycopy{
+  float: center;
+  width: 520px;
+  margin: auto;
+  margin-top: 70px;
+  padding: 50px;
+  background-color: rgba(255, 255, 255, .4);
+  border: 1px solid rgba(255, 255, 255, .4);
+  box-shadow: 0 0 0 10px rgba(255, 255, 255, .4);
+  color: #000;
+  display: inline-block;
+}
+
+.about_overlaycopy h2{
+  font-weight: 900;
+  font-size: 20px;
+  font-family: 'Work Sans', sans-serif;
+  color: #000;
+  line-height: 2px;
+}
+/* ==============END ABOUT HERO CONTAINER ============= */
+
+/* ==============ABOUT COPY CONTAINER ============= */
+.about-container{
+  max-width: 1200px;
+  overflow: hidden;
+ /*border: 1px solid #000;*/
+  margin: auto;
+  margin-top:10px;
+}
+
+.about-copy{
+width: 50%;
+float: left;
+/*border: 1px solid #000;*/
+display: inline-block;
+}
+
+.about-copy h5{
+ font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align:center;
+  margin:0;
+}
+
+.about-copy h6{
+ font-family: 'Work Sans', sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align:center;
+  margin: 0;
+  margin-right:20px;
+ border-bottom: solid 1px RGBA(179, 179, 179, 1);
+}
+
+.about-copy p{
+  margin:10px;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+}
+/* ==============END ABOUT COPY CONTAINER ============= */
+
+/* ==============ABOUT IMAGE CONTAINER ============= */
+.about-image{
+width: 50%;
+/*border: 1px solid #000;*/
+display: inline-block;
+float: left;
+background-image: url("../img/about_page/about_hero.jpg");
+background-repeat: no-repeat;
+background-size: cover;
+height:800px;
+margin-bottom: 20px;
+}
+
+/* ==============END ABOUT IMAGE CONTAINER ============= */
+
+/* ==============ABOUT SOCIAL NAV ============= */
+
+.about_socialnav{
+  text-align:center;
+  /*border: 1px solid #000;*/
+  height: 50px;
+  margin-top: auto;
+  padding-right: 42px;
+}
+
+.about_socialnav ul{
+    width: 100%;
+    margin: auto;
+    padding: 0;
+}
+
+.about_socialnav ul li {
+  margin: auto;
+  display: inline-block;
+  text-align: center;
+  list-style: none;
+  padding-left:30px;
+}
+
+.about_socialnav ul li a {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: RGBA(179, 179, 179, );
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.about_socialnav ul li a img {
+  height: 30px;
+  width: 30px;
+}
+/* ==============END ABOUT SOCIAL NAV ============= */
+
+/* ==============WORK PAGE ============= */
+.work-copy h5{
+ font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align:center;
+  margin:0;
+}
+
+.work-copy h6{
+ font-family: 'Work Sans', sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align:center;
+  margin: 0;
+  margin-right:20px;
+ border-bottom: solid 1px RGBA(179, 179, 179, 1);
+}
+/* ==============WORK GRID ============= */
+.cssbox-container{
+max-width: 1200px;
+margin: auto;
+}
+
+div.cssbox {
+  display: inline-block;
+  width: 33%;
+  margin: auto;
+  overflow: hidden;
+  height: 200px;
+
+}
+div.cssbox img{
+  max-width: 100%;
+}
+span.cssbox_full {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.8);
+  top: 0;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s linear;
+}
+
+span.cssbox_full img {
+  position: fixed;
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  max-height: 90%;
+  max-width: 90%;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 20px black;
+}
+
+a.cssbox_close,
+a.cssbox_prev,
+a.cssbox_next {
+  position: fixed;
+  text-decoration: none;
+  visibility: hidden;
+  color: white;
+  font-size: 36px;
+}
+
+a.cssbox_close {
+  top: 1%;
+  right: 1%
+}
+
+a.cssbox_close::after {
+  content: '\00d7';
+}
+
+a.cssbox_prev,
+a.cssbox_next {
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+a.cssbox_prev {
+  left: 5%;
+}
+
+a.cssbox_next {
+  right: 5%;
+}
+
+a:target ~ a.cssbox_close,
+a:target ~ a.cssbox_prev,
+a:target ~ a.cssbox_next {
+  visibility: visible;
+}
+
+a:target > img.cssbox_thumb + span.cssbox_full {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: initial;
+
+}
+
+span.cssbox_full {
+  cursor: initial;
+}
+/* This is the end of CSSBox */
+
+.work-button{
+  width: 35%;
+  display: block;
+  padding: 12px;
+  text-align: center;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #222;
+  border-radius: 5px;
+  border:1px solid RGBA(39, 40, 34, 1);
+  background: #fff;
+  text-decoration: none;
+  margin: auto;  
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.work-button:hover {
+  display: block;
+  transform: translatez(0);
+  box-shadow: 0 0 1px RGBA(0, 0, 0, 0);
+  backface-visibility: hidden;
+  position: relative;
+  background: RGBA(39, 40, 34, 1);
+  transition-property: color;
+  transition-duration: 0.3s;
+  color: white;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+
+
+
+
+/* ==============CONTACT FORM ============= */
+
+
+
+.contact_form_container{
+max-width: 1200px;
+margin:auto;
+}
+
+.contact_title h5{
+ font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  font-size: 40px;
+  text-transform: uppercase;
+  text-align:center;
+  margin:0;
+
+}
+.contact_title h6{
+ font-family: 'Work Sans', sans-serif;
+  font-weight: 200;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-align:center;
+  margin: 0;
+  border-bottom: solid 1px RGBA(179, 179, 179, 1);
+}
+.contact_title p{
+ font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-align:center;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  width: 900px;
+}
+.contact_title img{
+width: 30px;
+height: 30px;
+}
+
+.Form{
+  width: 900px;
+  margin: auto;
+  overflow: hidden;
+  margin-top: 10px;
+}
+
+.Form-column{
+  width: 50%;
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0 10px;
+}
+
+.Form-column li{
+  margin: 0 0 10px 0;
+  padding: 0;
+  display: block;
+  position: relative;
+}
+
+.Form-column li .parsley-errors-list{
+  position: absolute;
+  top: 46px;
+  left: 0;
+  z-index: 1;
+  background: #FD8A71;
+  color: #ffffff;
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.Form-column li .parsley-errors-list li{
+  margin: 0;
+  padding: 10px;
+}
+
+.Form label{
+  display: none;
+}
+
+.Form input[type=text],
+.Form textarea,
+.Form input[type=submit]{
+  height: 50px;
+}
+
+.Form input[type=text],
+.Form textarea{
+  background: #ffffff;
+  border: 0;
+  padding: 6px 12px;
+  color: #B4ABAA;
+  width: 100%;
+  border-radius: 3px;
+  border:solid 1px RGBA(179, 179, 179, 1);
+}
+
+.Form input[type=text]:focus,
+.Form textarea:focus,
+.Form input[type=submit]{
+  outline: none;
+}
+
+.Form textarea{
+  resize: none;
+  height: 110px;
+  display: block;
+}
+
+.Form input[type=submit]{
+  background:  RGBA(179, 179, 179, 1);
+  border: 0;
+  padding: 10px 20px;
+  color: #ffffff;
+  border-radius: 3px;
+  height: 50px;
+  width: 100%;
+}
+.Form input[type=submit]a:hover{
+  background: #000;
+  border: 0;
+  padding: 10px 20px;
+  color: #ffffff;
+  border-radius: 3px;
+  height: 50px;
+  width: 100%;
+}
+.Form input[type=submit]:hover {
+  background: RGBA(39, 40, 34, 1);
+  transition: all 0.5s;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .Form{
+    width: 100%;
   }
+
+  .Form-column{
+    width: 100%;
+    float: none;
+  }
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
